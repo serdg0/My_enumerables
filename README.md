@@ -5,11 +5,11 @@ This repository contains a clone for the following methods from the Ruby's Enume
 * #each_with_index
 * #select
 * #all?
-* any?
-* none?
-* count
-* map
-* inject
+* #any?
+* #none?
+* #count
+* #map
+* #inject
 
 Used:
 
