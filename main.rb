@@ -6,23 +6,23 @@ module Enumerable
 
     def my_each
         i = 0
-        while i<self.size
+        while i < self.size
             yield(self[i])
-            i+=1
+            i += 1
         end
         self
     end
 
     def my_each_index
-        i=0
+        i = 0
         while i < self.size
             yield(self[i],i)
-            i+=1
+            i += 1
         end
     end
 
     def my_select
-        arr_selection= []
+        arr_selection = []
         self.my_each{|x| arr_selection << x if yield(x)}
         arr_selection
     end
@@ -52,7 +52,7 @@ module Enumerable
     def my_count
         count = 0
         self.my_each do |x|
-            block_given? ? (count+=1 if yield(x)) : count+=1
+            block_given? ? (count += 1 if yield(x)) : count += 1
         end
         count
     end
